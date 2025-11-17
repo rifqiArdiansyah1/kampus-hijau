@@ -105,18 +105,28 @@
       <h2>Lapor Aksi Hijau</h2>
       <div class="card">
         <form id="reportForm">
-          <label>Jenis Aksi:
-            <select id="actionType">
-              <option value="tanam">Menanam Pohon (50 poin)</option>
-              <option value="bersih">Bersih-bersih (20 poin)</option>
-              <option value="tumbler">Menggunakan Tumbler (5 poin)</option>
-              <option value="hemat">Menghemat Listrik (10 poin)</option>
-            </select>
-          </label>
-          <label>Deskripsi (opsional): <input type="text" id="actionDesc" placeholder="Contoh: Menanam pohon di area X"></label>
-          <label>Bukti (URL/Gambar): <input type="text" id="actionProof" placeholder="Link foto atau catatan"></label>
-          <button type="submit" class="btn">Kirim Laporan</button>
-        </form>
+  <label>Jenis Aksi:
+    <select id="actionType">
+      <option value="tanam">Menanam Pohon (50 poin)</option>
+      <option value="bersih">Bersih-bersih (20 poin)</option>
+      <option value="tumbler">Menggunakan Tumbler (5 poin)</option>
+      <option value="hemat">Menghemat Listrik (10 poin)</option>
+    </select>
+  </label>
+
+  <label>Deskripsi (wajib): 
+    <input type="text" id="actionDesc" placeholder="Contoh: Menanam pohon di area X" required>
+  </label>
+
+  <label>Upload Foto Bukti — wajib:
+  <input type="file" id="actionImage" accept="image/*" required>
+</label>
+
+<img id="previewImage" style="display:none; width:120px; margin-top:10px; border-radius:8px;">
+
+  <button type="submit" class="btn">Kirim Laporan</button>
+</form>
+
       </div>
 
       <div class="card">
